@@ -36,5 +36,22 @@ let av = List.average Succpercent
 
 printfn "percentage of tm %f" av 
 
+type Cui =
+    | Korean
+    | Turkish
+
+type MovieType = 
+    | Reg
+    | IMAX
+    | DBOX
+    | RegWithSnacks
+    | IMAXWithSnacks
+    | DBOXWithSnacks
+type Act =
+    | BoardGame
+    | Chill
+    | Movie of MovieType
+    | Restaurant of Cui
+    | LongDrive of int * float
 
 
