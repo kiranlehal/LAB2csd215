@@ -54,4 +54,19 @@ type Act =
     | Restaurant of Cui
     | LongDrive of int * float
 
+let calculatebudg Act = 
+    match Act  with 
+    | BoardGame | Chill -> 0.0
+    | Movie Regular -> 12.0
+    | Movie IMAX -> 17.0
+    | Movie DBOX -> 20.0
+    | Movie _ -> 12.0 + 5.0
+    | Restaurant Korean -> 70.0
+    | Restaurant Turkish -> 65.0
+    | LongDrive (km, fuelchrg) -> float km * fuelchrg
+
+let eveAct = Restaurant Turkish
+let budg = calculatebudg eveAct
+printfn "Est budg: %.2f CAD" budg
+
 
