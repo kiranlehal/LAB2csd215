@@ -30,5 +30,11 @@ let goodtm = tm |> List.filter (fun tm -> tm.Sts.wins > tm.Sts.losses)
 goodtm |> List.iter (fun tm -> printfn "tm Name: %s" tm.Name)
 goodtm |> List.iter (fun tm -> printfn "tm wins: %d" tm.Sts.wins)
 
+let calculateSuccpercent tm = float tm.Sts.wins / float (tm.Sts.wins + tm.Sts.losses) * 100.0
+let Succpercent = goodtm |> List.map calculateSuccpercent
+let av = List.average Succpercent
+
+printfn "percentage of tm %f" av 
+
 
 
