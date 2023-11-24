@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VMb4QWuI0k/BBtyIc1YJcrqRlWgFN/FAl9M3ltUCMXHgt7/g9cuskxZ+mi4CkNhT0P9+ZFVbwCdmR/6HtysRlg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kiran\\MyFSharpApp\\MyFSharpApp.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kiran\\.nuget\\packages\\fsharp.core\\7.0.401\\fsharp.core.7.0.401.nupkg.sha512"
+  ],
+  "logs": []
+}
